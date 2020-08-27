@@ -2,7 +2,7 @@ class Main {
   public static void main(String[] args) {
 
     TesteSimples teste = new TesteSimples();
-    teste.executa();
+    teste.executar();
     System.out.println("Imc Monitor, fim");
   }
 }
