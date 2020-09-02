@@ -4,4 +4,6 @@ Trata-se de um sistema de gerenciamento de IMC (indice de massa corporal) para c
 
 ##### Histórico e evolução
 - Entidade Simples
-- 
+- Encapsulamento simples com get/set (privando acesso aos atributos)
+- Teste Unitário - Simples
+- Teste Unitário, com código e manipulação de Exception
