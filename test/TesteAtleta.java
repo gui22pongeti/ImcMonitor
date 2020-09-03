@@ -1,17 +1,9 @@
-class TestUnitario{
-
-  public void executarAll() throws Exception {
-     testNome();
-     testIdade();
-
-  }
-
-
-   public void testNome() throws Exception{
+class TesteAtleta{
+public void testNome() throws Exception{
 
      Atleta atleta = new Atleta();
      atleta.setNome("ABCD");
-     if(!atleta.getNome().equals("")){
+     if(!atleta.getNome().equals("ABCD")){
        throw new Exception("[erro] falha manipulando NOME valor " + atleta.getNome());
      }
 
