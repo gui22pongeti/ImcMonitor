@@ -44,6 +44,8 @@ class TelaConsoleMenu{
     System.out.println("\nMENU *****");
       System.out.println("1. [x] ATLETA");
       System.out.println("11. [<] LISTAGEM");
+      System.out.println("11. [<] CONSULTA ATLETA");
+      System.out.println("11. [<] REMOVE");
       System.out.println("0. [+] SAIR");
       System.out.println("-------------");
       System.out.println("Opção:_");  
@@ -79,15 +81,28 @@ class TelaConsoleMenu{
 }
       else{
         System.out.println("Nenhum atleta matriculado");
-      } 
-
-
-
+      }
     }
 
+    private void removerAtleta(){
+
+      System.out.println("\nRemover Atleta: ");
+
+      this.listarAtletas();
+
+      System.out.println("\nSelecione_: ");
+      int posicao =  teclado.nextInt();
+
+      matriculas.remove(posicao-1);
+
+      
+      System.out.println("\nRemovido!");
+
+      
 
 
 
 
 
+}
 }
