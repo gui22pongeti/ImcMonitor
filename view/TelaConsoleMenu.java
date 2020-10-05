@@ -27,25 +27,30 @@ class TelaConsoleMenu{
         menu();
       }
 
-      if(op == 11){
+      if(op == 5){
         listarAtletas();
         menu();
       }
 
+      if(op == 10){
+        removerAtleta();
+        menu();
       }
 
 
       
 
     }
+  }
   
 
   private static void menu(){
     System.out.println("\nMENU *****");
       System.out.println("1. [x] ATLETA");
-      System.out.println("11. [<] LISTAGEM");
-      System.out.println("11. [<] CONSULTA ATLETA");
-      System.out.println("11. [<] REMOVE");
+      System.out.println("2. [<] AVALIAÇÂO");
+      System.out.println("5. [<] LISTAGEM");      
+      System.out.println("7. [<] CONSULTA ATLETA");
+      System.out.println("10. [<] REMOVE");
       System.out.println("0. [+] SAIR");
       System.out.println("-------------");
       System.out.println("Opção:_");  
@@ -97,12 +102,5 @@ class TelaConsoleMenu{
 
       
       System.out.println("\nRemovido!");
-
-      
-
-
-
-
-
 }
 }
