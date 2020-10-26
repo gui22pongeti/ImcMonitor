@@ -5,13 +5,17 @@ class TelaConsoleMenu{
 
     Scanner teclado = new Scanner(System.in);
     ArrayList<Atleta> matriculas = new ArrayList<Atleta>();
-    //Atleta atletaDaAcademia = new Atleta();
+
+    DAO dao = new DAO();
 
   public void executar(){
 
     boolean sair = false;
 
     int op;
+
+          //matriculas = loadAll(); para amanha ou quarta
+
     menu();
     while(!sair){ 
                
@@ -19,7 +23,8 @@ class TelaConsoleMenu{
 
 
       if(op == 0){
-        sair = true;
+      dao.saveAll(matriculas); 
+      sair = true;
       }
 
       if(op == 1){
